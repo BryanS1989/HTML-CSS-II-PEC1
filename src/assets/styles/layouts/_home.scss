@@ -1,3 +1,11 @@
+@mixin flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
 html {
   font-size: $base-font-size;
   box-sizing: border-box;
@@ -97,12 +105,10 @@ html {
 }
 
 .navbarmenu {
+  @include flex-row;
+
   list-style: none;
   padding-left: 0px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
 
   .navbarmenu__item {
     border: 0.05rem solid $color-link;
@@ -130,11 +136,9 @@ html {
 
 @media (min-width: 769px) {
   .header {
+    @include flex-row;
+
     padding: 0 5%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
   }
 
   .navbar {
