@@ -7,15 +7,828 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Curriculum Vitae Bryan Steven Agray</title>
   </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
+
+  <body class="cv">
+
+    <header class="header">
+
+        <figure class="logo">
+            <img srcset="./assets/images/BryanSteven_300.png 300w,
+                        ./assets/images/BryanSteven_600.png 600w"
+                sizes="(min-width: 426px) 600px,
+                        300px"
+                src="./assets/images/BryanSteven_300.png"
+                alt="Bryan Steven Agray Londoño"
+                class="logo__image">
+        </figure>
+
+        <div class="data">
+            <hgroup class="hgroup hgroup-right">
+                <h1 class="hgroup__name">Bryan Steven</h1>
+                <h2 class="hgroup__surname">Agray Londoño</h2>
+            </hgroup>
+
+            <ul class="personalinfo">
+                <li class="personalinfo__location">
+                    Santa Perpètua de Mogoda, 08130, Barcelona
+                </li>
+                <li class="personalinfo__mail">
+                    <a class="cv__link cv__link-inverse"
+                        href="mailto:bryanstevenal@gmail.com">
+                        bryanstevenal@gmail.com
+                    </a>
+                </li>
+                <li class="personalinfo__telf">
+                    <a class="cv__link cv__link-inverse"
+                        href="tel:+34659636351">
+                        (+34) 659 63 63 51
+                    </a>
+                </li>
+                <li class="personalinfo__rrss">
+                    <a href="https://www.linkedin.com/in/bryan-steven-agray-londo%C3%B1o-89277419a/">
+                        <i class="cv__link fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbarmenu">
+                <li class="navbarmenu__item">
+                    <a href="#experiencia"
+                        class="cv__link cv__link-inverse">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                        <span>Experiencia</span>
+                    </a>
+                </li>
+                <li class="navbarmenu__item">
+                    <a href="#conocimientos"
+                        class="cv__link cv__link-inverse">
+                        <i class="fas fa-cogs fa-3x"></i>
+                        <span>Conocimientos</span>
+                    </a>
+                </li>
+                <li class="navbarmenu__item">
+                    <a href="#formacion"
+                        class="cv__link cv__link-inverse">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                        <span>Formación</span>
+                    </a>
+                </li>
+                <li class="navbarmenu__item">
+                    <a href="#idiomas"
+                        class="cv__link cv__link-inverse">
+                        <i class="fas fa-globe-americas fa-3x"></i>
+                        <span>Idiomas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <aside class="aside aside-nodisplay">
+        <ul>
+            <li>
+                Experiencia Laboral
+
+                <ul>
+                    2012 - 2020
+                </ul>
+                <ul>
+                    2020 - 2021
+                </ul>
+            </li>
+
+            <li>
+                Conocimientos
+
+                <ul>
+                    <li>
+                        Lenguajes de Programación
+                    </li>
+                    <li>
+                        Lenguajes de Marcado
+                    </li>
+                    <li>
+                        Lenguajes de Diseño Gráfico
+                    </li>
+                    <li>
+                        Frameworks
+                    </li>
+                    <li>
+                        Plataformas de Desarrollo
+                    </li>
+                    <li>
+                        Bases de Datos
+                    </li>
+                    <li>
+                        Herramientas de Testeo
+                    </li>
+                    <li>
+                        Servidores
+                    </li>
+                    <li>
+                        Arquitecturas
+                    </li>
+                    <li>
+                        Herramientas de Gestión
+                    </li>
+                    <li>
+                        Otros
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Formación
+
+                <ul>
+                    <li>
+                        2001 - 2005
+                    </li>
+                    <li>
+                        2005 - 2007
+                    </li>
+                    <li>
+                        2007 - 2011
+                    </li>
+                    <li>
+                        2020 - Actualmente
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Idiomas
+                <ul>
+                    <li>
+                        Español
+                    </li>
+                    <li>
+                        Catalán
+                    </li>
+                    <li>
+                        Inglés
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <section class="section experiencia">
+            <h2 id="experiencia" class="section__title">
+                <i class="fas fa-user-tie"></i>
+                <span>EXPERIENCIA LABORAL</span>
+            </h2>
+            <ul class="experiencia__list">
+                <li class="experiencia__item">
+                    <h3 class="empresa__title">
+                        <div>2020 - Actualmente</div>
+                        <div>Web Developer</div>
+                        <div>
+                            <a class="cv__link"
+                                href="https://qualita.es/">
+                                Qualita
+                            </a>
+                        </div>
+                    </h3>
+                    <p class="empresa__text">
+                        Como parte del grupo de desarrollo en el <span class="bold">departamento de Producto</span>,
+                        nos encargamos del desarrollo y mantenimiento de las diferentes
+                        funcionalidades para el producto principal de la empresa,
+                        <span class="bold">
+                            <a class="cv__link" href="https://send2sign.net/">Send2sign</a>
+                        </span>.
+                    </p>
+                    <p class="empresa__text">
+                        <span class="bold">
+                            <a class="cv__link" href="https://send2sign.net/">Send2sign</a>
+                        </span>
+                        es una solución para la firma electrónica de documentos, con
+                        la cual los usuarios pueden crear documentos y ubicar las diferentes
+                        firmas que han de componerlo. Estas firmas tienen una validez
+                        legal y dependiendo de los diferentes tipos de firmas el proceso de firma
+                        varía así como sus evidencias legales.
+                    </p>
+                    <div class="labores">
+                        <div class="empresa__text">
+                            <span class="bold">Mis funciones</span> como parte del equipo de desarrollo son:
+                            <ul class="empresa__list">
+                                <li class="empresa__item">
+                                    Desarrollo de nuevas funcionalidades
+                                </li>
+                                <li class="empresa__item">
+                                    Modificación de las funcionalidades ya existentes
+                                </li>
+                                <li class="empresa__item">
+                                    Detección y solución de bugs
+                                </li>
+                                <li class="empresa__item">
+                                    HelpDesk
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="empresa__text">
+                            <span class="bold">Las tecnologías</span> con las cuales se trabajan son:
+                            <ul class="empresa__list">
+                                <li class="empresa__item">
+                                    Framework
+
+                                    <ul>
+                                        <li>Laravel 5</li>
+                                    </ul>
+                                </li>
+                                <li class="empresa__item">
+                                    Front-End
+
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>Bootstrap 4</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+                                <li class="empresa__item">
+                                    Back-End
+
+                                    <ul>
+                                        <li>
+                                            PHP 7
+                                        </li>
+                                        <li>
+                                            MySql 5
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="empresa__item">
+                                    Otras tecnologías / software
+
+                                    <ul>
+                                        <li>git</li>
+                                        <li>Bitbucket</li>
+                                        <li>Amazon Web Services</li>
+                                        <li>JIRA</li>
+                                        <li>Postman</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="experiencia__item">
+                    <h3 class="empresa__title">
+                        <div>2012 - 2020</div>
+                        <div>IT Consultant</div>
+                        <div>
+                            <a class="cv__link"
+                                href="https://www.capgemini.com/es-es/">
+                                Capgemini
+                            </a>
+                        </div>
+                    </h3>
+                    <p class="empresa__text">
+                        Como parte del <span class="bold">grupo de Financial Services Global Business Unit (FSGBU)</span>
+                        se desempeña varias labores relacionadas con la <span class="bold">aplicación de Servicios
+                        de Pagos y de Pensiones</span> de un importante cliente del sector de la Banca
+                        Española:
+                    </p>
+                    <ul class="empresa__list">
+                        <li class="empresa__item">
+                            Desarrollo de procesos Batch en entorno Mainframe Host a través de
+                            Terminal Virtual IBM Personal Communications usando PL1 y JCL.
+                        </li>
+                        <li class="empresa__item">
+                            Desarrollo de aplicaciones ABSIS con Eclipse INDIGO:
+                            <ul>
+                                <li>
+                                    Aplicación de Canal Web J2EE (MVC): JSP, XML, Java
+                                </li>
+                                <li>
+                                    Servicios de Integración, Externalizados y de Negocio: Java,
+                                    JSON, Bases de Datos Oracle, IBM DB2 e IMS.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="empresa__item">
+                            Testeo con Servidor local Oracle Weblogic 11g, documentación de las
+                            pruebas (Pruebas de Integración y Regresión) y seguimiento en Producción.
+                        </li>
+                        <li class="empresa__item">
+                            Gestión de grupos de desarrollo localizados en Argentina y Asturias
+                        </li>
+                        <li class="empresa__item">
+                            HelpDesk.
+                        </li>
+                        <li class="empresa__item">
+                            Análisis y valoración de nuevos proyectos y modificaciones.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="section section-inverse conocimientos">
+            <h2 id="conocimientos" class="section__title">
+                <i class="fas fa-cogs"></i>
+                <span>CONOCIMIENTOS</span>
+            </h2>
+
+            <ul class="conocimientos__list">
+                <li class="conocimientos__item">
+                    <p>Lenguajes de Programación</p>
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">PHP</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Javascript / TS</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Java</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">PL1</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">JCL</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Lenguajes de Marcado</p>
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">HTML5</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">JSON</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">XML</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino"><abbr title="Java Server Pages">JSP</abbr></dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Lenguajes de Diseño Gráfico y Librerías</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">CSS3</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Bootstrap</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Kendo UI</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Frameworks</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Laravel</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Angular</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Spring</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Spring Batch</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Plataformas de Desarrollo</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Visual Studio Code</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Atom</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Eclipse IDE</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">IBM Personal Comm.</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Bases de Datos</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">MySql 5</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">IBM DB2</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">IMS/Db</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">SQL</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Herramientas de Testeo API</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Postman</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Soap UI</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Swagger</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Servidores</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Apache</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Weblogic Server</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Arquitecturas</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">MVC</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">ABSIS TF7</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">J2EE</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Herramientas de Gestión</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">JIRA</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">TRELLO</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">CLARITY</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">IBM MAXIMO</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li class="conocimientos__item">
+                    <p>Otros</p>
+
+                    <dl>
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Adobe Photoshop</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                        <div class="conocimientos__details">
+                            <dt class="conocimientos__termino">Unity</dt>
+                            <dd class="levels">
+                                <div class="level level-fill"></div>
+                                <div class="level level-void"></div>
+                                <div class="level level-void"></div>
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="section formacion">
+            <h2 id="formacion" class="section__title">
+                <i class="fas fa-graduation-cap"></i>
+                <span>FORMACIÓN</span>
+            </h2>
+
+            <ul class="formacion__list">
+                <li class="formacion__item">
+                    <h3 class="formacion__title">
+                        <div class="formacion__year">2020 - Actualmente</div>
+                        <div class="formacion__center">MÁSTER DE DESARROLLO DE SITIOS Y APLICACIONES WEB</div>
+                    </h3>
+                    <p class="formacion__text formacion__text-oblique">Universitat Oberta de Catalunya (UOC)</p>
+                </li>
+
+                <li class="formacion__item">
+                    <h3 class="formacion__title">
+                        <div class="formacion__year">2007 – 2011</div>
+                        <div class="formacion__center">INGENIERÍA TÉCNICA EN INFORMÁTICA DE SISTEMAS</div>
+                    </h3>
+                    <p class="formacion__text formacion__text-oblique">Universidad Autónoma de Barcelona (UAB)</p>
+                </li>
+
+                <li class="formacion__item">
+                    <h3 class="formacion__title">
+                        <div class="formacion__year">2005 – 2007</div>
+                        <div class="formacion__center">BACHILLERATO TECNOLÓGICO</div>
+                    </h3>
+                    <p class="formacion__text formacion__text-oblique">IES Estela Ibérica, Santa Perpetua de Mogoda</p>
+                </li>
+
+                <li class="formacion__item">
+                    <h3 class="formacion__title">
+                        <div class="formacion__year">2001 – 2005</div>
+                        <div class="formacion__center">ENSEÑANZA SECUNDARIA OBLIGATORIA</div>
+                    </h3>
+                    <p class="formacion__text formacion__text-oblique">IES Estela Ibérica, Santa Perpetua de Mogoda</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="section section-inverse idiomas">
+            <h2 id="idiomas" class="section__title">
+                <i class="fas fa-globe-americas"></i>
+                <span>IDIOMAS</span>
+            </h2>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="tabla__headercell">Hablado</th>
+                        <th class="tabla__headercell">Escrito</th>
+                        <th class="tabla__headercell">Leído</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th class="tabla__headercell tabla__headercell-left">Español</th>
+                        <td class="tabla__cell">Nativo</td>
+                        <td class="tabla__cell">Excelente</td>
+                        <td class="tabla__cell">Excelente</td>
+                    </tr>
+
+                    <tr>
+                        <th class="tabla__headercell tabla__headercell-left">Catalán</th>
+                        <td class="tabla__cell">Nativo</td>
+                        <td class="tabla__cell">Alto</td>
+                        <td class="tabla__cell">Excelente</td>
+                    </tr>
+
+                    <tr>
+                        <th class="tabla__headercell tabla__headercell-left">Inglés</th>
+                        <td class="tabla__cell">Intermedio</td>
+                        <td class="tabla__cell">Medio</td>
+                        <td class="tabla__cell">Alto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
