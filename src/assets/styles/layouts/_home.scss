@@ -175,20 +175,20 @@ html {
     height: 100vh;
     background-color: $color-aside;
     color: $color-primary;
+    padding: 1rem;
 
     .aside__menu{
       padding: 0px;
 
       .aside__item {
         list-style-type: square;
-        margin-top: 1rem;
+        margin-top: 0.8rem;
       }
     }
-
   }
 
   .main {
-    flex: 4;
+    flex: 3;
   }
 }
 
